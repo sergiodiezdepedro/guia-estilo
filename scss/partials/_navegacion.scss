@@ -1,0 +1,6 @@
+.nav-link {
+    color: $color-links;
+    &:hover {
+        color: darken($color-links, 8%);
+    }
+}

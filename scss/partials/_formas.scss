@@ -1,0 +1,36 @@
+.contenedor {
+    width: 15rem;
+    height: 15rem;
+    &-cuadrado {
+        @extend .contenedor;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: $color-amarillo;
+        &__linea-texto {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+    }
+    &-dos-colores {
+        @extend .contenedor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        p {
+            color: $color-naranja-3;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        span {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.color-sample {
+    margin-bottom: .5rem;
+    height: 10rem;
+    border-radius: .25rem .25rem 0 0;
+}
+
+// Definición del 'background-color' de cada muestra de color mediante un mapa y un '@each' para definir la clase correspondiente recorriendo el mismo
+$mapa-colores: ( 
+    uno: $color-enfasis,
+    dos: $color-enfasis-oscuro,
+    tres: $color-oscuro,
+    cuatro: $color-links,
+    cinco: $color-texto-especial,
+    seis: $color-naranja,
+    siete: $color-naranja-2,
+    ocho: $color-naranja-3,
+    nueve: $color-rojizo,
+    diez: $color-teal,
+    once: $color-azul,
+    doce: $color-azul-2,
+    trece: $color-azul-3,
+    catorce: $color-azul-4,
+    quince: $color-azul-5,
+    dieciseis: $color-amarillo,
+    diecisiete: $color-verde-brillante,
+    dieciocho: $color-fucsia,
+    diecinueve: $color-violeta,
+    veinte: $color-verde-oscuro,
+    gra-circu-1: $color-grafico-circular-gris,
+    gra-circu-2: $color-grafico-circular-azul,
+    gra-circu-3: $color-grafico-circular-naranja,
+    gra-circu-4: $color-grafico-circular-verde,
+    gra-circu-5: $color-grafico-circular-rosa,
+    gra-circu-6: $color-grafico-circular-marron,
+    gra-circu-7: $color-grafico-circular-purpura,
+    gra-circu-8: $color-grafico-circular-amarillo,
+    gra-circu-9: $color-grafico-circular-rojo,
+);
+@each $name, $value in $mapa-colores {
+    .#{$name} {
+        background-color: $value;
+    }
+}
+
+.color-enfasis {
+    color: $color-enfasis;
+}
+
+.serif {
+    font-family: $fuente-serif;
+}
+
+.sans-serif {
+    font-family: $fuente-sans-serif;
+}
+
+.monospace {
+    font-family: $fuente-monospace;
+}
+
+.especial {
+    font-family: $fuente-especial;
+}

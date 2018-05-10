@@ -1,0 +1,9 @@
+body {
+    font-family: $fuente-sans-serif;
+}
+
+.elemento {
+    &__titulo {
+        color: $color-texto-especial;
+    }
+}
