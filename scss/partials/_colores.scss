@@ -5,7 +5,8 @@
 }
 
 // Definición del 'background-color' de cada muestra de color mediante un mapa y un '@each' para definir la clase correspondiente recorriendo el mismo
-$mapa-colores: ( 
+$mapa-colores: (
+    light: $color-light, 
     uno: $color-enfasis,
     dos: $color-enfasis-oscuro,
     tres: $color-oscuro,
@@ -26,6 +27,7 @@ $mapa-colores: (
     dieciocho: $color-fucsia,
     diecinueve: $color-violeta,
     veinte: $color-verde-oscuro,
+    veintiuno: $color-granate, 
     gra-circu-1: $color-grafico-circular-gris,
     gra-circu-2: $color-grafico-circular-azul,
     gra-circu-3: $color-grafico-circular-naranja,
