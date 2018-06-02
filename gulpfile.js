@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     plumber = require('gulp-plumber'),
