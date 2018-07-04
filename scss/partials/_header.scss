@@ -1,5 +1,7 @@
 $componente-header-1-color-enfasis: #79cd27;
 $componente-header-1-bk: 768px;
+$componente-navegacion-menu-item-2-color: #c2c2c2;
+$componente-navegacion-menu-item-2-color-hover: #032169;
 .header {
     padding: 3rem;
     margin-bottom: 2rem;
@@ -63,5 +65,30 @@ $componente-header-1-bk: 768px;
     }
     &__logo {
         color: $componente-header-1-color-enfasis;
+    }
+}
+
+.navegacion__menu-2 {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion__menu__item-2 {
+    text-align: center;
+    flex: auto;
+    padding: 1rem 0;
+    border-top: solid 10px $componente-navegacion-menu-item-2-color;
+    &:hover {
+        border-top-color: $componente-navegacion-menu-item-2-color-hover;
+    }
+}
+
+.navegacion__menu__item__link-2 {
+    display: inline-block;
+    color: $color-oscuro;
+    &:hover {
+        color: $color-oscuro;
+        text-decoration: none;
     }
 }
