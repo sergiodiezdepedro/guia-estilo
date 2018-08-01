@@ -34,3 +34,20 @@
         }
     }
 }
+
+.caja-con-sombra {
+    @extend .contenedor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, .28) 0px 2px 5px;
+    border: 2px solid #ff7e00;
+    p {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}

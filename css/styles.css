@@ -7259,7 +7259,7 @@ body {
 .ubuntu {
   font-family: "Ubuntu", sans-serif; }
 
-.contenedor, .contenedor-cuadrado, .contenedor-dos-colores {
+.contenedor, .contenedor-cuadrado, .contenedor-dos-colores, .caja-con-sombra {
   width: 15rem;
   height: 15rem; }
   .contenedor-cuadrado {
@@ -7302,3 +7302,24 @@ body {
         margin-bottom: 0; }
     .contenedor-dos-colores span {
       color: #fff; }
+
+.caja-con-sombra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.28) 0px 2px 5px;
+          box-shadow: rgba(0, 0, 0, 0.28) 0px 2px 5px;
+  border: 2px solid #ff7e00; }
+  .caja-con-sombra p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem; }
